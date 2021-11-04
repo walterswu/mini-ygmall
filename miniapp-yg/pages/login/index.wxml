@@ -1,0 +1,10 @@
+<view>
+    <button type="primary" 
+    plain="{{true}}" 
+    open-type="getUser" 
+    bindtap="getUserProfile"
+    >
+  登录
+</button>
+</view>
+  

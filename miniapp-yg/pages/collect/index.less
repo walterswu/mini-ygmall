@@ -1,0 +1,54 @@
+page{
+  
+}
+.collect_main{
+  background-color: #f3f4f6;
+  .collect_title{
+    padding: 35rpx 0;
+    .collect_tips{
+      padding: 15rpx;
+      border: 1rpx solid #ccc;
+      margin-left: 25rpx;
+      background-color: #fff;
+    }
+    .active{
+      color:var(--themeColor);
+      border: 1rpx solid var(--themeColor);
+    }
+  }
+  .collect_content{
+    .goods_item{
+      display: flex;
+      border-bottom: 5rpx solid #ccc;
+      background-color: #fff;
+      .goods_img_wrap{
+        flex:2;
+        display: flex;
+        // 水平垂直居中
+        justify-content: inherit;
+        align-items: center;
+        image{
+          width: 70%;
+        }
+      }
+      .goods_info_wrap{
+        flex:3;
+        display: flex;
+        // 改变弹性布局主轴方向为列方向
+        flex-direction: column;
+        //在该布局的元素周围留有空白
+        justify-content: space-around;
+        .goods_name{
+          // 移动端盒子模型
+          display: -webkit-box;
+          //超出的部分进行隐藏
+          overflow: hidden;
+          // 设置盒子模型为垂直分布
+          -webkit-box-orient: vertical;
+          //设置行数为2行
+          -webkit-line-clamp: 2;
+        }
+      }
+    } 
+  }
+}
